@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(https://fonts.googleapis.com/css2?family=Space+Mono:wght@100;200;300;400;500;600;700&display=swap);
+
+
+*,
+*::after,
+*::before{
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    transition: all 200ms ease-in-out;
+}
+
+:root{
+    --vl-gray:hsl(0, 0%, 98%);
+    --vlg-blue:hsl(236, 33%, 92%);
+    --lg-blue:hsl(233, 11%, 84%);
+    --dg-blue:hsl(236, 9%, 61%);
+    --vdg-blue:hsl(235, 19%, 35%);
+    --vd-blue:hsl(235, 21%, 11%);
+    --vdd-blue:hsl(235, 24%, 19%);
+    --lg-blue:hsl(234, 39%, 85%);
+    --lg-blue-hover:hsl(236, 33%, 92%);
+    --dg-blue-hover:hsl(234, 11%, 52%);
+    --vdg-blue-hover:hsl(233, 14%, 35%);
+    --font: 1.2em;
+}
+
+#todo__cancel{
+    display: none;
+}
+
+#todo:hover #todo__cancel{
+    display:flex;
+}
