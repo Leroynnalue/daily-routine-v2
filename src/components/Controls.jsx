@@ -5,7 +5,6 @@ export default function Controls({userTodos,setTodos}) {
   const toggleId = (id) => {
     const newTodos = [...userTodos]
     const todo = newTodos.find(todo => todo.id === id)
-    console.log(todo)
     todo.checked = !todo.checked
     setTodos(newTodos)
   }
